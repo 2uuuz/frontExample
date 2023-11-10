@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table 2</title>
+<style>
+	table, th, td{
+		border: 1px solid #ccc;
+	}
+	
+	td{
+		width:  100px; /* 셀 너비 */
+		height: 30px; /* 셀 높이 */
+	}
+</style>
+</head>
+<body>
+	<table><!-- 2줄 4칸-->
+		<colgroup>
+			<col><!-- 스타일 없음-->
+			<col span="2" style="background-color: hotpink;">
+			<col style="background-color: mediumpurple;">
+			
+		</colgroup>
+	
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+		</tr>
+	</table>
+
+</body>
+</html>
