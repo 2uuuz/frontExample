@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	let user = {name:"js", age:20};
+	
+	document.write(typeof user + "<br>");
+	document.write(user+"<br>");
+	console.log(user);
+	
+	//property 읽기
+	document.write(user.name + "<br>");
+	document.write(user['name'] + "<br>");
+	let p_n = 'age';
+	document.write(user[p_n] + "<br>"); //[]에서 ''가 없으면 변수를 찾는다.
+	
+	for(u in user){ //객체 안에 있는 프로퍼티이름(string)을 하나씩 꺼내옴
+		document.write(u + " : " + typeof u + "<br>");
+		document.write(user[u]+"<br>");
+	}
+	document.write("<br>");
+	
+	user.age=40;
+	for(u in user){
+		document.write(u + " : " +user[u] + "<br>");
+	}
+	
+</script>
+</body>
+</html>
